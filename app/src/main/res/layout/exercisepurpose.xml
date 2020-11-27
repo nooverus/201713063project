@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:id="@+id/BMR"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:id="@+id/TDEE"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동목적을 선택하세요"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="diet"
+            android:id="@+id/radio_diet"
+            android:onClick="onPurposeListener"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help1"
+            android:src="@drawable/help"
+            android:background="#ffffff"
+            android:onClick="helpListener"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="leanmassup"
+            android:id="@+id/radio_lean_mass"
+            android:onClick="onPurposeListener"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help2"
+            android:src="@drawable/help"
+            android:background="#ffffff"
+            android:onClick="helpListener"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bulkup"
+            android:id="@+id/radio_bulk"
+            android:onClick="onPurposeListener"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help3"
+            android:src="@drawable/help"
+            android:background="#ffffff"
+            android:onClick="helpListener"/>
+
+    </RadioGroup>
+</LinearLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:id="@+id/manageButton"
+        android:src="@drawable/next"
+        >
+
+    </ImageButton>
+
+
+</LinearLayout>

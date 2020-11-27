@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="https://terms.naver.com/entry.nhn?docId=1210788cid=40942categoryId=32159
+https://sicknam.tistory.com/88
+https://blog.naver.com/check0823/221684218199
+https://terms.naver.com/entry.nhn?docId=5733119cid=43667categoryId=43667
+https://icon-icons.com/
+https://tdeecalculator.net/
+"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+</LinearLayout>

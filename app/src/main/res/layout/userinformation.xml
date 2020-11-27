@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="이름"
+        android:privateImeOptions="defaultInputmode=korean"
+        android:id="@+id/name"
+        >
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="나이(숫자만)"
+        android:id="@+id/age"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="키(숫자만)"
+        android:id="@+id/height"
+        android:inputType="number"
+
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="체중(숫자만)"
+        android:id="@+id/weight"
+        android:inputType="number"
+
+        >
+    </EditText>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="운동량"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_gravity="center">
+    </TextView>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="거의안함"
+            android:id="@+id/radio_do_not"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중간(주3~4회 40분)"
+            android:id="@+id/radio_little_work"
+            android:onClick="onRadioButtonClicked"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="많이함(매일 1시간반)"
+            android:id="@+id/radio_lot"
+            android:onClick="onRadioButtonClicked"
+            />
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next"
+        android:src="@drawable/next"
+        android:background="#ffffff"
+        android:layout_gravity="right"
+        >
+    </ImageButton>
+
+</LinearLayout>
