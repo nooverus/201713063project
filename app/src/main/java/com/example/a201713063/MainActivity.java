@@ -14,11 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+    //시작이미지 버튼을 누를시 userinformation 액티비티로 넘어가도록함
     public void startListener(View v) {
         Intent intent = new Intent(getApplicationContext(), userinformation.class);
         startActivity(intent);
     }
 
+    //주석 버튼(책모양 이미지)을 누를시 reference 액티비티로 넘어가도록함
     public void reference(View view) {
         Intent intent = new Intent(getApplicationContext(), reference.class);
         startActivity(intent);
