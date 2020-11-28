@@ -13,22 +13,25 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+//커스텀리스트로 구성해 식품의 이름과 칼로리정보를 나타내는 액티비티
 public class diet extends AppCompatActivity {
-    ListView food_list;
+    ListView food_list;//리스트뷰
+    //식품 리스트
     String[] titles = {
             "고구마","현미밥","쌀밥","닭가슴살","삼겹살","요거트"
     };
+    //각 식품에 대한 칼로리 리스트
     String[] cals ={"86","153","143","109","331","68"
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.diet);
+        setContentView(R.layout.diet);//diet layout이 화면에 나타나도록한다
         CustomList adapter = new CustomList(diet.this);
         food_list=(ListView)findViewById(R.id.food_list);
         food_list.setAdapter(adapter);
+        //항목클릭시 항목의 이름을 toast메시지로 출력
         food_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -38,7 +41,7 @@ public class diet extends AppCompatActivity {
 
 
     }
-
+//customlist 구성
     public class CustomList extends ArrayAdapter<String> {
         private final Activity context;
         public CustomList(Activity context) {
@@ -46,6 +49,7 @@ public class diet extends AppCompatActivity {
             this.context=context;
         }
         @Override
+        //각 항목에 리스트값들이 나타나도록한다
        public View getView(int position, View view, ViewGroup parent) {
             LayoutInflater inflater = context.getLayoutInflater();
             View rowView = inflater.inflate(R.layout.foodlist,null,true);
